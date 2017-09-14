@@ -62,6 +62,8 @@
       freeMode: true,     //swiper根据惯性滑动，不贴合
       freeModeMomentumRatio: 0.3,     //滑动惯量
       slidesPerView: 'auto',      //可视区显示slide的个数
+      observer:true,    //修改swiper自己或子元素时，自动初始化swiper
+      observeParents:true,    //修改swiper的父元素时，自动初始化swiper
       onTap: function(swiper, event){
         var swiperWidth = swiper.container[0].clientWidth;    //swiper-container的可视宽度
         var maxTranslate = swiper.maxTranslate();     //swiper偏移量(slide总宽度-container可视宽度)
