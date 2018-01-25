@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path");   //路径模块
-var serveStatic = require("serve-static");    //
+var serveStatic = require("serve-static");    //静态资源处理模块
 var bodyParser = require("body-parser");    //处理表单数据模块
 var _ = require("underscore");    //函数工具模块
 var mongoose = require("mongoose");

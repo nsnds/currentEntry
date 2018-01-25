@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>html is src/html/ <%= htmlWebpackPlugin.options.title %> </title>
+		<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+	</head>
+	<body>
+		<%= htmlWebpackPlugin.options.date %>
+
+		<!-- <% for (var key in htmlWebpackPlugin.files) { %>
+			<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+		<% } %>
+
+		<% for (var key in htmlWebpackPlugin.options) { %>
+			<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %>
+		<% } %> -->
+		<script src="<%= htmlWebpackPlugin.files.chunks.a.entry %>"></script>
+	</body>
+</html>
